@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Escolha o país que você está vivendo <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="igualdade()">
+    <div id="res"></div>
+
+
+    <script>
+        function igualdade() {
+            var pais = document.querySelector('input#pais')
+            if (pais.value == 'Brasil') { // Pega o valor o input pais.
+                res.innerHTML = `<p>Você é brasileiro</p>`
+            } else {
+                res.innerHTML = `<p>Você é estrangeiro`
+            }
+        }
+        /* Na condição if posso criar uma variável convertendo para string igual no ex010 */
+    </script>
+</body>
+</html>

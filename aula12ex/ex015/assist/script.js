@@ -3,6 +3,7 @@ function verificar() {
     var ano = data.getFullYear()
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#res')
+    
     if(fano.value.length == 0 || Number(fano.value) > ano){
         alert('[ERRO] Verifique os dados e tente novamente')
     } else {
@@ -15,31 +16,31 @@ function verificar() {
             genero = 'Homem'
             if (idade >= 0 && idade < 10) {
                 //Criança
-                img.setAttribute('src', 'bebe-m.jpg')
+                img.setAttribute('src', 'img/bebe-m.jpg')
             } else if (idade < 21) {
                 //Jovem
-                img.setAttribute('src', 'jovem-m.jpg')
+                img.setAttribute('src', 'img/jovem-m.jpg')
             } else if (idade < 50) {
                 //Adulto
-                img.setAttribute('src', 'adulto-m.jpg')
+                img.setAttribute('src', 'img/adulto-m.jpg')
             } else {
                 //Idoso
-                img.setAttribute('src', 'idoso-m.jpg')
+                img.setAttribute('src', 'img/idoso-m.jpg')
             }
         } else if (fsex[1].checked) {
             genero = 'Mulher'
             if (idade >= 0 && idade < 10) {
                 //Criança
-                img.setAttribute('src', 'bebe-f.jpg')
+                img.setAttribute('src', 'img/bebe-f.jpg')
             } else if (idade < 21) {
                 //Jovem
-                img.setAttribute('src', 'jovem-f.jpg')
+                img.setAttribute('src', 'img/jovem-f.jpg')
             } else if (idade < 50) {
                 //Adulto
-                img.setAttribute('src', 'adulto-f.jpg')
+                img.setAttribute('src', 'img/adulto-f.jpg')
             } else {
                 //Idoso
-                img.setAttribute('src', 'idoso-f.jpg')
+                img.setAttribute('src', 'img/idoso-f.jpg')
             }
         }
         res.style.textAlign = 'center'
